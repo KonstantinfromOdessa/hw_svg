@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <svg width="1000" height="500">
+        <circle r="40" cx="70" cy="70" fill="yellow" stroke="orange" stroke-width="5" />
+
+        <line id="treetrunk" x1="100" y1="250" x2="100" y2="380" stroke="brown" />
+        <ellipse id="treecrown" cx="100" cy="250" rx="30" ry="50" fill="brown" />
+        <use href="#treetrunk" x="100" stroke-width="5" />
+        <use href="#treecrown" x="100" />
+        <line id="treetrunk" x1="300" y1="250" x2="300" y2="380" stroke="black" />
+        <ellipse cx="300" cy="200" rx="40" ry="70" fill="green" />
+        <use href="#treetrunk" x="300" stroke-width="5" />
+        <use href="#treecrown" x="300" />
+        <use href="#treetrunk" x="400" />
+        <use href="#treecrown" x="400" />
+
+        <rect x="50" y="370" width="800" rx="10" ry="10" height="20" fill="lightblue" />
+
+        <rect x="600" y="280" width="70" height="90" fill="gray" />
+        <polygon points="600,280 635,225 670,280" fill="green" />
+        <circle r="15" cx="635" cy="300" fill="white" stroke="black" stroke-width="2" />
+        <line x1="635" y1="285" x2="635" y2="315" stroke="black" stroke-width="1" />
+        <line x1="620" y1="300" x2="650" y2="300" stroke="black" stroke-width="1" />
+        <line x1="626" y1="370" x2="626" y2="350" stroke="black" stroke-width="2" />
+        <line x1="642" y1="370" x2="642" y2="350" stroke="black" stroke-width="2" />
+        <line x1="625" y1="350" x2="643" y2="350" stroke="black" stroke-width="2" />
+
+        <rect x="200" y="30" rx="10" ry="10" width="100" height="15" fill="white">
+            <animate attributeName="x" values="200;220;200" dur="2s" repeatCount="indefinite" />
+        </rect> />
+        <rect x="350" y="60" rx="10" ry="10" width="150" height="15" fill="white">
+            <animate attributeName="x" values="350;340;350" dur="3s" repeatCount="indefinite" />
+        </rect> />
+        <rect x="200" y="60" rx="10" ry="10" width="120" height="15" fill="white">
+            <animate attributeName="x" values="200;220;200" dur="1s" repeatCount="indefinite" />
+        </rect> />
+        <rect x="400" y="20" rx="10" ry="10" width="120" height="15" fill="white">
+            <animate attributeName="x" values="400;500;400" dur="4s" repeatCount="indefinite" />
+        </rect> />
+        <rect x="550" y="50" rx="10" ry="10" width="120" height="15" fill="white">
+            <animate attributeName="x" values="550;500;550" dur="2s" repeatCount="indefinite" />
+        </rect> />
+
+        <text class="text" x="200" y="500" fill="blue">
+            <animate attributeName="fill" values="yellow;blue;yellow" dur="3s" repeatCount="indefinite" />
+            #NOWAR
+        </text>
+
+        <image x="800" y="50" href="img/ua .jpg" alt="flag">
+            <animate attributeName="opacity" values="0;1" dur="1s" repeatCount="indefinite" />
+        </image>
+
+        <path d="M 700,370 L 700,370 L 750,250 L 770,300 L 800,320 L820,370" fill="pink" />
+
+    </svg>
+</body>
+
+</html>
